@@ -1,0 +1,138 @@
+body{
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.calculator{
+    position: relative;
+    top: 100px;
+}
+
+.display{
+    width: 364px;
+    height: 115px;
+    border-radius: 14px;
+    position: relative;
+    margin-bottom:20px ;
+    /* top: 10px; */
+    background-color:hsl(223, 31%, 20%) ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.number{
+    color: white;
+    font-size: 70px;
+    margin-right: 20px;
+}
+
+/*numbers pad ------------------------------------------------------*/
+
+.number-pad{
+    width: 364px;
+    height: 528px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 14px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "1st" "2nd" "3rd" "4th" "equals reset";
+    position: relative;
+    /* top: 87px; */
+
+}
+
+.first-row{
+    grid-area: 1st;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.second-row{
+    grid-area: 2nd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.third-row{
+    grid-area:3rd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fourth-row{
+    grid-area: 4th;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.last-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/*KEYS---------------------------------------------*/
+.key > button{
+    background-color: hsl(30, 25%, 89%);
+    border-radius: 5px;
+    width: 72px;
+    height: 77px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 4px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+}
+
+#del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+    color: white;
+    font-size: 23px;
+}
+
+.equation-button > button{
+    width: 151px;
+    height: 62px;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+
+#equals {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 4px hsl(6, 70%, 34%);
+  color: white;
+    font-size: 31px;
+    font-weight: bold;
+}
+
+/*maybe make a grid with 3 seperate rows
+inside each row i can display flex to have everything centerd
+but on the numpad itself i can make it a grid so that it
+
+i can have one column with four seprate rows*/
