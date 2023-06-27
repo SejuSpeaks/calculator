@@ -21,13 +21,14 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+
 </head>
 
 <body>
 
   <div class="calculator">
 
-    <div class="display">
+    <div class="display" data-screen>
 
     <span class="number">0</span>
 
@@ -38,37 +39,37 @@
       <!-- <div class="keys"> -->
 
       <div class="first-row">
-        <div class="key"><button>7</button></div>
-        <div class="key"><button>8</button></div>
-        <div class="key"><button>9</button></div>
-        <div class="key"><button id="del">DEL</button></div>
+        <div class="key"><button data-number>7</button></div>
+        <div class="key"><button data-number>8</button></div>
+        <div class="key"><button data-number>9</button></div>
+        <div class="key"><button id="del" data-delete>DEL</button></div>
       </div>
 
 
       <div class="second-row">
-        <div class="key"><button>4</button></div>
-        <div class="key"><button>5</button></div>
-        <div class="key"><button>6</button></div>
-        <div class="key"><button>+</button></div>
+        <div class="key"><button data-number>4</button></div>
+        <div class="key"><button data-number>5</button></div>
+        <div class="key"><button data-number>6</button></div>
+        <div class="key"><button data-operation class="operation-button" onclick="changeColor()">+</button></div>
       </div>
 
       <div class="third-row">
-        <div class="key"><button>1</button></div>
-        <div class="key"><button>2</button></div>
-        <div class="key"><button>3</button></div>
-        <div class="key"><button>-</button></div>
+        <div class="key"><button data-number>1</button></div>
+        <div class="key"><button data-number>2</button></div>
+        <div class="key"><button data-number>3</button></div>
+        <div class="key"><button data-operation class="operation-button">-</button></div>
       </div>
 
       <div class="fourth-row">
-        <div class="key"><button>.</button></div>
-        <div class="key"><button>0</button></div>
-        <div class="key"><button>/</button></div>
-        <div class="key"><button>X</button></div>
+        <div class="key"><button data-number>.</button></div>
+        <div class="key"><button data-number>0</button></div>
+        <div class="key"><button data-operation class="operation-button">/</button></div>
+        <div class="key"><button data-operation  class="operation-button">X</button></div>
       </div>
 
       <div class="last-row">
-        <div class="equation-button"><button id="reset">RESET</button></div>
-        <div class="equation-button"><button id="equals">=</button></div>
+        <div class="equation-button"><button id="reset" data-reset>RESET</button></div>
+        <div class="equation-button"><button id="equals" data-equals>=</button></div>
       </div>
       <!-- </div> -->
     </div>
@@ -77,7 +78,7 @@
   </div>
 
 
-
+  <script src="./script.js"></script>
 </body>
 
 </html>

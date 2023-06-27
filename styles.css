@@ -100,6 +100,13 @@ body{
     color: hsl(221, 14%, 31%);
 }
 
+.key > button:active {
+    transform: translateY(1px);
+
+  }
+
+
+
 #del{
     background-color: hsl(225, 21%, 49%);
     box-shadow: 0px 4px hsl(224, 28%, 35%);
@@ -127,8 +134,12 @@ body{
   background-color: hsl(6, 63%, 50%);
   box-shadow: 0px 4px hsl(6, 70%, 34%);
   color: white;
-    font-size: 31px;
-    font-weight: bold;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.button-pressed{
+    background-color: rgb(204, 22, 22);
 }
 
 /*maybe make a grid with 3 seperate rows
